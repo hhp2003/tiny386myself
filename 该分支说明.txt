@@ -1,0 +1,8 @@
+hhp：我看下这个项目如何使用，忽略开发板，先直接用
+With ESP-IDF 6.0.x (experimental):
+- JC4880P443 (ESP32-P4 Rev1.3 360MHz, 800x480)
+
+我的espidf只有5.4、5.5.、6.0
+源项目里p4使用的v6.0
+而p4c5开发板的bsp又是使用v5.5
+就很搞

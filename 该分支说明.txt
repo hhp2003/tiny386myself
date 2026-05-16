@@ -6,3 +6,9 @@ With ESP-IDF 6.0.x (experimental):
 源项目里p4使用的v6.0
 而p4c5开发板的bsp又是使用v5.5
 就很搞
+
+现在原始的tiny386可以编译通过了
+但是进行移植的话，请不要在分支hhp_learn_how_to_use_tiny386_project和tiny386_build_succeed_branch开发
+这些分支只是我用学习使用原始tiny386工程，使之可以编译通过的
+
+请基于tiny386_build_succeed_branch这个分支，开一个新分支用于移植到wt99p4c5开发板上

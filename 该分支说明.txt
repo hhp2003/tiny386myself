@@ -23,5 +23,6 @@ hhp_transplant_tiny386_to_wt99p4c5分支：
 
 给board_jc4880p443.h和board_wt99p4c5.h添加了注释，并将board_wt99p4c5.h修改成了，应该适合wt99p4c5
 
+将sdkconfig.wt99p4c5修改成了，应该适合wt99p4c5，主要是把wifi remote、hosted的从机改成了c5
 
 

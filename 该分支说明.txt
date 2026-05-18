@@ -21,4 +21,7 @@ hhp_transplant_tiny386_to_wt99p4c5分支：
 复制了lcd_st7701.c，修改名称为lcd_ek79007.c
 在esp/main/cmakelists.txt中添加了"lcd_ek79007.c"
 
+给board_jc4880p443.h和board_wt99p4c5.h添加了注释，并将board_wt99p4c5.h修改成了，应该适合wt99p4c5
+
+
 

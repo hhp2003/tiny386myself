@@ -61,6 +61,22 @@ dependencies:
       registry_url: https://components.espressif.com/
       type: service
     version: 2.1.0
+  espressif/esp_lcd_ek79007:
+    component_hash: 8005700b7f10c7136b6e2a3f19a48f972aa1d13ed107ed298574e8d24d17ea83
+    dependencies:
+    - name: espressif/cmake_utilities
+      registry_url: https://components.espressif.com
+      require: private
+      version: 0.*
+    - name: idf
+      require: private
+      version: '>=5.3'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    targets:
+    - esp32p4
+    version: 1.0.4
   espressif/esp_lcd_st7701:
     component_hash: 3fb061112bfe5402dcf5e09ff7e7f5b09a96b9a3fdd81c59d69996626b4dbc2f
     dependencies:
@@ -154,10 +170,11 @@ direct_dependencies:
 - espressif/esp_codec_dev
 - espressif/esp_hosted
 - espressif/esp_lcd_axs15231b
+- espressif/esp_lcd_ek79007
 - espressif/esp_lcd_st7701
 - espressif/esp_lcd_touch_gt911
 - espressif/esp_wifi_remote
 - idf
-manifest_hash: 626f2e302c75311a23f519d7be39d46f8effa1dce4b14b28ef4b5b5f6ffe9363
+manifest_hash: 5316f940b961cd5e06244706f8d0377ecb203d9df9faa4048565dd82f66c67fb
 target: esp32p4
 version: 3.0.0

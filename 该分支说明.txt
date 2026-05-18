@@ -12,3 +12,13 @@ With ESP-IDF 6.0.x (experimental):
 这些分支只是我用学习使用原始tiny386工程，使之可以编译通过的
 
 请基于tiny386_build_succeed_branch这个分支，开一个新分支用于移植到wt99p4c5开发板上
+
+
+hhp_transplant_tiny386_to_wt99p4c5分支：
+复制了sdkconfig.jc4880p443并将后缀改为了wt99p4c5
+修改了esp/main/idf_component.yml，添加了esp_lcd_ek79007组件
+复制了board_jc4880p443.h，修改名称为board_wt99p4c5.h
+复制了lcd_st7701.c，修改名称为lcd_ek79007.c
+在esp/main/cmakelists.txt中添加了"lcd_ek79007.c"
+
+

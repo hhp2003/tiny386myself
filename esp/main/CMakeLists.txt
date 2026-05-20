@@ -25,6 +25,7 @@ idf_component_register(SRCS "esp_main.c"
 "i2s.c"
 "storage.c"
 INCLUDE_DIRS "")
+# REQUIRES driver esp_lcd esp_driver_ledc esp_hw_support)
 
 if(NOT DEFINED BOARD)
     set(BOARD "jc3248w535")

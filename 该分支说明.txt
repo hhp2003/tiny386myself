@@ -23,6 +23,13 @@ hhp_transplant_tiny386_to_wt99p4c5分支：
 
 给board_jc4880p443.h和board_wt99p4c5.h添加了注释，并将board_wt99p4c5.h修改成了，应该适合wt99p4c5
 
-将sdkconfig.wt99p4c5修改成了，应该适合wt99p4c5，主要是把wifi remote、hosted的从机改成了c5
+将sdkconfig.wt99p4c5修改成了，应该适合wt99p4c5，主要是把wifi remote、hosted的从机改成了c5，引脚这些配置嗯应该是正确的
+
+将lcd_ek79007.c该成了适合wt99p4c5开发板的驱动了，配套其他cmakelist等文件也修改了
+然后我还导入了一个bsp_err_check.h文件，因为lcd_ek79007.c要调用它，虽然可以合并或者修改，但是没精力了
+现在应该是移植完毕了的，我自己编译是能够通过的，然后移植后的文件可能有些硬件接口啥的配置写错了（也可能没有问题）
+反正你们再多多检查一下，我这里是编译成功了的，然后编译成功的方法，请看过程.docx
+
+
 
 

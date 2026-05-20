@@ -21,4 +21,21 @@ endif()
 set(SDKCONFIG_DEFAULTS "${BOARD_SDKCONFIG}")
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+
+set(CXX_COMPILE_OPTIONS
+    -Wno-deprecated-enum-enum-conversion
+    -Wno-write-strings
+)
+
+add_compile_options(
+    -Wno-format
+    -Wno-unused-variable
+    -Wno-missing-field-initializers
+    -Wno-unused-but-set-variable
+    -Wno-cast-function-type
+    -Wno-ignored-qualifiers
+)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-enum-enum-conversion")
+
 project(tiny386)

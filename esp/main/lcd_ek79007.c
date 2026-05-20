@@ -685,7 +685,7 @@ esp_err_t bsp_display_backlight_off(void)
 
 //-------下面调用上面的函数
 
-uint16_t show[200*200] ;
+
 
 //初始化lcd
 void my_lcd_ek79007_init(void)
